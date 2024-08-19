@@ -108,9 +108,6 @@ a:-webkit-any-link {
 
 /* ABOUT US */
 
-.hero-section {
-}
-
 .twocolumn__container {
   position: relative;
   display: flex;
@@ -468,7 +465,7 @@ body {
   border-radius: 100px;
   font-weight: 700;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .image {
@@ -516,13 +513,14 @@ body {
 
 .feature {
   margin-top: 1.25rem;
-  color: rgb(113 128 150 / 1);
+  color: white;
   font-weight: 500;
 }
 
 .threeplans__description {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   font-weight: 500;
   color: rgb(124 139 161 / 1);
 }
@@ -536,11 +534,16 @@ body {
 .threeplans__planheader {
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 60px;
   text-transform: uppercase;
   line-height: 1.625;
-  border-style: ridge;
+  text-align: center;
+}
+
+.threeplans__planheader3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .threeplans__plan {
@@ -556,17 +559,99 @@ body {
   margin-top: 4rem;
 }
 
+.name1 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 30px;
+  color: white;
+}
+
+.name2 {
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 30px;
+}
+
+.name3 {
+  color: white;
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.price {
+  color: white;
+}
+
+.price2 {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.duration2 {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+}
+
+.feature__mainfeature {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.feature__mainfeature2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.feature2 {
+  color: white;
+  margin-top: 20px;
+}
+
+.threeplans__plan1 {
+  background-color: lightseagreen;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.threeplans__plan2 {
+  margin: 30px;
+  border-radius: 10px;
+  background-color: rgb(102 126 234 / 1);
+}
+
+.threeplans__plan3 {
+  margin: 30px;
+  border-radius: 10px;
+  background-color: salmon;
+}
+
 .threeplans__planfeatures {
+  color: white;
   display: flex;
   flex-direction: column;
   flex: 1 1 0%;
-  border-style: ridge;
-  padding: 40px;
+  padding: 60px;
+  text-align: center;
 }
 
 .threeplans__planaction {
-  border-style: ridge;
-  padding: 30px;
+  padding: 40px;
+  text-align: center;
+}
+
+.threeplans__buynow-button {
+  font-weight: 700;
+  background-color: white;
+  border-style: none;
 }
 
 .price {
@@ -580,7 +665,7 @@ body {
 .duration {
   font-size: 18px;
   letter-spacing: 0.1em;
-  color: rgb(160 174 192 / 1);
+  color: white;
 }
 
 .threeplans__buynow-button {
@@ -842,8 +927,10 @@ footer {
 
 .footer-logo {
   display: flex;
+  align-items: center;
   text-align: center;
   margin-bottom: 10px;
+  margin-left: 60px;
 }
 
 .footer-logo img {
@@ -862,6 +949,11 @@ footer {
   text-align: center;
 }
 
+.footer-social {
+  margin-right: 60px;
+  text-align: right;
+}
+
 .footer-social a {
   margin: 0 10px;
   display: inline-block;
@@ -873,21 +965,15 @@ footer {
 
 /* Iphone Pro 12 */
 
-
 @media (min-width: 768px) {
   .threecol--sideimage__container {
     flex-direction: row;
   }
 
-  .threecol--sideimage {
-
-  }
-
-
   .getstarted__row {
     flex-wrap: wrap;
   }
-  }
+}
 
 @media (max-width: 768px) {
   .nav__link--list {
@@ -905,9 +991,8 @@ footer {
   }
 
   .twocolumn-button__heading {
-    font-size: 38px;
-    margin-left: 2px;
-    text-align: center;
+    font-size: 32px;
+    text-align: left;
   }
 
   .twocolumn-button__description {
@@ -917,7 +1002,6 @@ footer {
   }
 
   .twocolumn-button__subheading {
-    margin-left: 110px;
     font-size: 20px;
   }
 
@@ -970,8 +1054,6 @@ footer {
   }
 
   .input__email {
-    width: 150px;
-    margin-left: 30px;
     margin-right: 10px;
   }
 
@@ -1031,8 +1113,13 @@ footer {
     flex-direction: column;
   }
 
+  .learn-more {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
   .image img {
-    width: 300px;
+    width: 500px;
     margin-top: 100px;
   }
 
@@ -1063,7 +1150,6 @@ footer {
     padding-bottom: 100px;
   }
 
-
   .twocolumn__leftcolumn {
     margin-right: auto;
     margin-left: auto;
@@ -1086,14 +1172,21 @@ footer {
     position: relative;
   }
 
-  .twocolumn-button__text {
-    width: ;
+  .threeplans__planheader1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .threeplans__planheader2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }
 
 @media (max-width: 1024px) {
-  
-    .twocolumn__container {
+  .twocolumn__container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1106,7 +1199,6 @@ footer {
   .twocolumn__leftcolumn {
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
   }
 
   .twocolumn__heading {
@@ -1130,13 +1222,20 @@ footer {
     margin-bottom: 100px;
   }
 
+  .threeplans__planscontainer {
+    flex-direction: column;
+  }
 
-}
+  .threeplans__planheader1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 
-
-@media (max-width: 1024px) {
-  .twocolumn__container {
-    
+  .threeplans__planheader2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -1152,11 +1251,10 @@ footer {
   }
 }
 
-  .twocolumn__img {
-    width: 100%;
-    min-width: 0px;
-    max-width: 32rem;
-  }
+.twocolumn__img {
+  width: 100%;
+  min-width: 0px;
+  max-width: 32rem;
 }
 
 @media (min-width: 1280px) {
@@ -1167,10 +1265,4 @@ footer {
   .twocolumn__rightcolumn {
     margin-right: auto;
   }
-
-
-
-
-
-
 }
