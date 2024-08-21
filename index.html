@@ -9,66 +9,53 @@
 </head>
 
 <body class="body">
-    <section style="transform: none">
-        <div class="row">
-            <nav>
-                <div>
-                    <div class="container">
-                        <div class="brand__wrapper">
-                            <img class="company__logo"
-                                src="https://treact.owaiskhan.me/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg"
-                                alt="">
-                            <div class="name">Treact</div>
-                        </div>
-                        <ul class="nav__link--list">
-                            <li class="nav__link">
-                                <a href="#
-                                nav__link--anchor
-                                link__hover-effect
-                                link__hover-effect--blue
-                                ">About</a>
-                            </li>
-                            <li class="nav__link">
-                                <a href="#
-                                nav__link--anchor
-                                link__hover-effect
-                                link__hover-effect--blue
-                                ">Blog</a>
-                            </li>
-                            <li class="nav__link">
-                                <a href="#
-                                nav__link--anchor
-                                link__hover-effect
-                                link__hover-effect--blue
-                                ">Pricing</a>
-                            </li>
-                            <li class="nav__link">
-                                <a href="#
-                                nav__link--anchor
-                                link__hover-effect
-                                link__hover-effect--blue
-                                ">Contact Us</a>
-                            </li>
-                            <li class="nav__link">
-                                <a href="#
-                                nav__link--anchor
-                                link__hover-effect
-                                link__hover-effect--blue
-                                ">Login</a>
-                            </li>
-                            <li class="nav__link">
-                                <a class="nav__link--primary" href="#
-                                nav__link--anchor
-                                link__hover-effect
-                                nav__link--anchor--primary
-                                ">Sign up</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+    <div class="root">
+        <div class="nav__mobile__links--container" style="display: none">
+            <div class="nav__mobile__links">
+                <ul>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Pricing</li>
+                    <li>Contact Us</li>
+                    <li>Login</li>
+                    <li class="signup__button">Sign Up</li>
+                </ul>
+            </div>
         </div>
-    </section>
+        <nav class="navigation">
+            <a href="/" class="nav__left">
+                <figure class="nav__logo--wrapper">
+                    <img class="treact-logo" src="./assets/treact.logo.svg" alt="Treact-logo">
+                </figure>
+                Treact
+            </a>
+            <button class="nav__right--mobile menu-button" onclick="menuToggle()" type="button">
+                <i class="fa-solid fa-bars menu-open" style="display: block;"></i>
+                <i class="fa-solid fa-x menu-close" style="display: none;"></i>
+            </button>
+            <div class="nav__right--desktop">
+                <ul>
+                    <li>
+                        <a href="/" class="nav__links">About</a>
+                    </li>
+                    <li>
+                        <a href="/" class="nav__links">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/" class="nav__links">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="/" class="nav__links">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="auth__buttons">
+                    <button class="auth__button--login nav__links">Login</button>
+                    <button class="auth__button--signup button__hover">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
     <section class="hero-section">
         <div class="twocolumn__container">
             <div class="twocolumn__leftcolumn">
@@ -265,7 +252,9 @@
                     aliquip ex ea commodo consequat.</p>
                 <div class="values">
                     <div class="value">
-                        <div class="icon affordable"></div>
+                        <div class="icon affordable">
+                            <img class="dollar-sign" src="./assets/dollar-sign-solid.svg" alt="">
+                        </div>
                         <h3>Affordable</h3>
                         <p>We promise to offer you the best rate we can - at par with the industry standard.</p>
                     </div>
@@ -392,66 +381,7 @@
                 </div>
             </div>
         </section>
-        <section style="transform: none;">
-            <div class="faq__container">
-                <div class="singlecol__column">
-                    <div class="singlecol__headercontent">
-                        <h5 class="singlecol__subheading"> <span class="text--blue">FAQS</span></h5>
-                        <h2 class="singlecol__heading">You have <span class="text--blue">Questions?</span></h2>
-                        <p class="singlecol__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Fugiat
-                            rerum at laboriosam repellat reiciendis animi quidem exercitationem vero tempore
-                            ratione.</p>
-                    </div>
-                    <div class="singlecol__faqscontainer">
-                        <div class="singlecol__faq">
-                            <dt class="singlecol__question">
-                                <span class="singlecol__questiontext">Are all the templates easily
-                                    customizable?</span>
-                                <span class="singlecol__questiontoggleicon"></span>
-                            </dt>
-                        </div>
-                        <div class="singlecol__faq">
-                            <dt class="singlecol__question">
-                                <span class="singlecol__questiontext">How long do you usually support a standalone
-                                    template
-                                    for?</span>
-                                <span class="singlecol__questiontoggleicon"></span>
-                            </dt>
-                        </div>
-                        <div class="singlecol__faq">
-                            <dt class="singlecol__question">
-                                <span class="singlecol__questiontext">What kind of payment methods do you
-                                    accept?</span>
-                                <span class="singlecol__questiontoggleicon"></span>
-                            </dt>
-                        </div>
-                        <div class="singlecol__faq">
-                            <dt class="singlecol__question">
-                                <span class="singlecol__questiontext">Is there a subscription service to get the
-                                    latest
-                                    templates?</span>
-                                <span class="singlecol__questiontoggleicon"></span>
-                            </dt>
-                        </div>
-                        <div class="singlecol__faq">
-                            <dt class="singlecol__question">
-                                <span class="singlecol__questiontext">Are the templates compatible with
-                                    react?</span>
-                                <span class="singlecol__questiontoggleicon"></span>
-                            </dt>
-                        </div>
-                        <div class="singlecol__faq">
-                            <dt class="singlecol__question">
-                                <span class="singlecol__questiontext">Do you really support Internet Explorer
-                                    11?</span>
-                                <span class="singlecol__questiontoggleicon"></span>
-                            </dt>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <section style="transform: none;">
             <div class="getstarted__styledcontainer">
                 <div class="getstarted--contactus">
