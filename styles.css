@@ -81,8 +81,6 @@ a:-webkit-any-link {
 }
 
 .nav__right--mobile {
-  background-color: transparent;
-  border: none;
   width: 24px;
   height: 24px;
   z-index: 20;
@@ -556,12 +554,20 @@ a:-webkit-any-link {
 }
 
 .dollar-sign {
-  height: 40px;
+  opacity: 80%;
+  margin-top: 10px;
+  height: 30px;
 }
 
 .value .professionalism {
   background-color: #fad1d1;
   border-radius: 50%;
+}
+
+.briefcase-icon {
+  opacity: 80%;
+  margin-top: 12px;
+  height: 25px;
 }
 
 .value h3 {
