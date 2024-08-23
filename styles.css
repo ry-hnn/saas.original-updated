@@ -112,7 +112,7 @@ a:-webkit-any-link {
 }
 
 .nav__mobile__links--container {
-  z-index: 999;
+  z-index: 20;
   position: absolute;
   top: 0;
   left: 0;
@@ -958,7 +958,7 @@ a:-webkit-any-link {
   border-color: white;
   border-style: none;
   background-color: white;
-  color: blue;
+  color: #6415ff;
   font-weight: 700;
   padding: 12px;
   border-radius: 100px;
